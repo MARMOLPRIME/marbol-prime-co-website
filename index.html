@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marbol Prime Co. - Elegancia Marmoleada para tu Hogar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for headings, Lato for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for a more premium feel */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FDFBF8; /* Creamy background */
+            color: #333333; /* Darker text for contrast */
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .header-bg {
+            background-color: #2F4F4F; /* Dark Slate Gray */
+        }
+        .btn-primary {
+            background-color: #B8860B; /* Dark Goldenrod */
+            color: #ffffff;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #DAA520; /* Goldenrod */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .text-accent {
+            color: #B8860B; /* Dark Goldenrod */
+        }
+        .footer-bg {
+            background-color: #2F4F4F; /* Dark Slate Gray */
+        }
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem; /* More rounded corners */
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #E0E0E0; /* Subtle border */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        /* Custom animation for fade-in effect */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        /* Parallax effect for hero section (simple version) */
+        .parallax-hero {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="header-bg text-white py-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <!-- Logo y Nombre de la Empresa -->
+            <div class="flex items-center mb-4 md:mb-0">
+                <!-- User's Logo - Replace this URL with the actual hosted URL of your logo -->
+                <img src="https://lh3.googleusercontent.com/fife/AL9zwlR3H0e7lR8j9rK0t1k8d2z7w7f5k8q4v5c1c8w8h4p4y4z4a4b4c4d4e4f4g4h4i4j4k8q4v5c1c8w8h4p4y4z4a4b4c4d4e4f4g4h4i4j4k=s1200" alt="Marbol Prime Co. Logo" class="w-16 h-16 mr-4 rounded-full border-2 border-white p-1">
+                <h1 class="text-4xl font-playfair font-bold">Marbol Prime Co.</h1>
+            </div>
+            <!-- Navegación -->
+            <nav>
+                <ul class="flex space-x-8 text-lg font-lato font-light">
+                    <li><a href="#inicio" class="hover:text-yellow-300 transition duration-300">Inicio</a></li>
+                    <li><a href="#productos" class="hover:text-yellow-300 transition duration-300">Productos</a></li>
+                    <li><a href="#nosotros" class="hover:text-yellow-300 transition duration-300">Nosotros</a></li>
+                    <li><a href="#contacto" class="hover:text-yellow-300 transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative parallax-hero h-screen flex items-center justify-center text-white" style="background-image: url('https://placehold.co/1920x1080/4A6B6B/FDFBF8?text=Elegancia+Marmoleada+Premium');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-center p-8 rounded-xl bg-black bg-opacity-40 max-w-4xl mx-auto animate-fadeIn">
+            <h2 class="text-6xl md:text-7xl font-playfair font-bold leading-tight mb-6 drop-shadow-lg">
+                El Arte del Mármol en tus Manos
+            </h2>
+            <p class="text-xl md:text-2xl font-lato mb-10 leading-relaxed">
+                Descubre la sofisticación y la belleza única de nuestras macetas marmoleadas, diseñadas para transformar cualquier espacio en un santuario de estilo.
+            </p>
+            <a href="#productos" class="btn-primary py-4 px-10 rounded-full text-xl font-semibold shadow-xl">
+                Explora Nuestra Colección Exclusiva
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-20 bg-gradient-to-b from-FDFBF8 to-EAE7E1">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-playfair font-bold text-center mb-16 text-gray-900 animate-fadeIn">Nuestras Creaciones Marmoleadas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product Card 1 - Replace src with your actual image URL -->
+                <div class="card animate-fadeIn" style="animation-delay: 0.2s;">
+                    <img src="https://placehold.co/600x400/D3D3D3/000000?text=Mazeta+Marmoleada+Clásica" alt="Mazeta Marmoleada Clásica" class="w-full h-80 object-cover rounded-t-xl border-b border-gray-200">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-playfair font-semibold mb-3">Colección Clásica</h3>
+                        <p class="text-gray-700 mb-5 leading-relaxed">
+                            Diseños atemporales con patrones de mármol que evocan la grandeza de la antigüedad, perfectos para un toque de distinción.
+                        </p>
+                        <button class="btn-primary py-3 px-6 rounded-full text-base font-medium">Ver Detalles</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 - Replace src with your actual image URL -->
+                <div class="card animate-fadeIn" style="animation-delay: 0.4s;">
+                    <img src="https://placehold.co/600x400/C0C0C0/000000?text=Mazeta+Marmoleada+Moderna" alt="Mazeta Marmoleada Moderna" class="w-full h-80 object-cover rounded-t-xl border-b border-gray-200">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-playfair font-semibold mb-3">Líneas Contemporáneas</h3>
+                        <p class="text-gray-700 mb-5 leading-relaxed">
+                            Macetas con un estilo moderno y minimalista, donde el marmoleado se convierte en el protagonista de la pieza.
+                        </p>
+                        <button class="btn-primary py-3 px-6 rounded-full text-base font-medium">Ver Detalles</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 - Replace src with your actual image URL -->
+                <div class="card animate-fadeIn" style="animation-delay: 0.6s;">
+                    <img src="https://placehold.co/600x400/B0B0B0/000000?text=Mazeta+Marmoleada+Premium" alt="Mazeta Marmoleada Premium" class="w-full h-80 object-cover rounded-t-xl border-b border-gray-200">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-playfair font-semibold mb-3">Edición Exclusiva</h3>
+                        <p class="text-gray-700 mb-5 leading-relaxed">
+                            Piezas únicas con veteados de mármol excepcionales, cada una una obra de arte irrepetible.
+                        </p>
+                        <button class="btn-primary py-3 px-6 rounded-full text-base font-medium">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section (Unique Touch) -->
+    <section id="porque-elegirnos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-playfair font-bold mb-16 text-gray-900 animate-fadeIn">¿Por Qué Elegir Marbol Prime Co.?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="animate-fadeIn" style="animation-delay: 0.2s;">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
+                        <svg class="w-20 h-20 text-accent mb-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                        <h3 class="text-2xl font-playfair font-semibold mb-4">Artesanía Superior</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Cada maceta es elaborada con meticulosidad, garantizando una calidad y durabilidad inigualables.
+                        </p>
+                    </div>
+                </div>
+                <div class="animate-fadeIn" style="animation-delay: 0.4s;">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
+                        <svg class="w-20 h-20 text-accent mb-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                        <h3 class="text-2xl font-playfair font-semibold mb-4">Diseños Exclusivos</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nuestros patrones marmoleados son únicos, asegurando que cada maceta sea una pieza distintiva.
+                        </p>
+                    </div>
+                </div>
+                <div class="animate-fadeIn" style="animation-delay: 0.6s;">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
+                        <svg class="w-20 h-20 text-accent mb-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                        <h3 class="text-2xl font-playfair font-semibold mb-4">Sostenibilidad</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Comprometidos con prácticas sostenibles en la selección de materiales y procesos de producción.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-20 bg-FDFBF8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12 animate-fadeIn">
+                <img src="https://placehold.co/800x550/B8860B/FDFBF8?text=Nuestra+Historia+Premium" alt="Sobre Nosotros" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left animate-fadeIn" style="animation-delay: 0.2s;">
+                <h2 class="text-5xl font-playfair font-bold mb-8 text-gray-900">Nuestra Pasión por el Diseño</h2>
+                <p class="text-lg font-lato leading-relaxed mb-6">
+                    En <span class="font-semibold text-accent">Marbol Prime Co.</span>, cada maceta es una manifestación de nuestra dedicación al arte y la naturaleza. Fusionamos la maestría artesanal con la innovación en diseño para crear piezas que no solo embellecen, sino que también cuentan una historia.
+                </p>
+                <p class="text-lg font-lato leading-relaxed">
+                    Nuestra misión es ofrecer productos que inspiren y transformen, aportando un toque de lujo y serenidad a cada espacio. Nos enorgullece la calidad y la singularidad de cada una de nuestras creaciones.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-playfair font-bold mb-16 text-gray-900 animate-fadeIn">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg animate-fadeIn" style="animation-delay: 0.2s;">
+                    <p class="text-xl italic text-gray-700 mb-6">
+                        "Las macetas de Marbol Prime Co. son simplemente espectaculares. La calidad del marmoleado es impresionante y han transformado por completo mi sala de estar. ¡Totalmente recomendadas!"
+                    </p>
+                    <p class="text-lg font-semibold text-accent">- Ana G., Diseñadora de Interiores</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg animate-fadeIn" style="animation-delay: 0.4s;">
+                    <p class="text-xl italic text-gray-700 mb-6">
+                        "Buscaba algo único para mis plantas y encontré la perfección aquí. Cada maceta es una obra de arte. El servicio al cliente también fue excepcional."
+                    </p>
+                    <p class="text-lg font-semibold text-accent">- Carlos R., Coleccionista de Plantas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-FDFBF8">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-playfair font-bold mb-12 text-gray-900 animate-fadeIn">Conéctate con Nosotros</h2>
+            <p class="text-lg font-lato mb-10 max-w-3xl mx-auto leading-relaxed">
+                Estamos aquí para responder a todas tus preguntas y ayudarte a elegir la maceta perfecta. Envíanos un mensaje o contáctanos directamente.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16 mb-12">
+                <div class="flex items-center animate-fadeIn" style="animation-delay: 0.2s;">
+                    <svg class="w-10 h-10 text-accent mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.928 2.928A3 3 0 000 5.858v8.284A3 3 0 002.928 17.07l.707-.707A3 3 0 005.858 17h8.284a3 3 0 002.928-2.928l.707-.707A3 3 0 0017 14.142V5.858A3 3 0 0014.072 2.928l-.707-.707A3 3 0 0014.142 0H5.858A3 3 0 002.928 2.928zM10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-xl font-lato">info@marbolprimeco.com</span>
+                </div>
+                <div class="flex items-center animate-fadeIn" style="animation-delay: 0.4s;">
+                    <svg class="w-10 h-10 text-accent mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                    </svg>
+                    <span class="text-xl font-lato">+1 (123) 456-7890</span>
+                </div>
+            </div>
+            <form class="mt-12 max-w-2xl mx-auto p-10 bg-white rounded-xl shadow-2xl animate-fadeIn" style="animation-delay: 0.6s;">
+                <div class="mb-8">
+                    <input type="text" placeholder="Tu Nombre Completo" class="w-full p-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-3 focus:ring-accent text-lg">
+                </div>
+                <div class="mb-8">
+                    <input type="email" placeholder="Tu Correo Electrónico" class="w-full p-5 border border-gray-300 rounded-lg focus:outline-none focus:ring-3 focus:ring-accent text-lg">
+                </div>
+                <div class="mb-8">
+                    <textarea placeholder="Tu Mensaje" rows="8" class="w-full p-5 border border-gray-300 rounded-lg resize-y focus:outline-none focus:ring-3 focus:ring-accent text-lg"></textarea>
+                </div>
+                <button type="submit" class="btn-primary py-4 px-10 rounded-full text-xl font-semibold w-full">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-lato mb-4">&copy; 2025 Marbol Prime Co. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-8 mt-4 text-xl">
+                <a href="#" class="hover:text-yellow-300 transition duration-300">Facebook</a>
+                <a href="#" class="hover:text-yellow-300 transition duration-300">Instagram</a>
+                <a href="#" class="hover:text-yellow-300 transition duration-300">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
